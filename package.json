@@ -1,0 +1,16 @@
+{
+  "name": "hapi-unkey-template",
+  "version": "1.0.0",
+  "description": "A api template with Hapi.js and Unkey",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yash-1511",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.10",
+    "@unkey/api": "^0.26.2",
+    "dotenv": "^16.4.5"
+  }
+}
