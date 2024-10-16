@@ -44,8 +44,9 @@ const init = async () => {
                             // Extract the token from the Authorization header
                             const token = authorization.replace('Bearer ', '');
 
+                            const apiId = process.env.UNKEY_API_ID;
                             // Verify the key using Unkey
-                            const { result, error } = await verifyKey(token);
+                            const { result, error } = await verifyKey({ key: token, apiId: apiId });
 
                             if (error) {
                                 console.error(error.message);
